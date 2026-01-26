@@ -17,6 +17,7 @@ pipeline {
             }
             steps {
                 sh '''
+                    echo "Small change to trigger the build..."
                     ls -la
                     node --version
                     npm --version
